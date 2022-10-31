@@ -1,0 +1,207 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+}
+
+#app {
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+}
+
+@media screen and (max-width: 960px) {
+  .bars {
+    display: block;
+    margin-left: 888px;
+  }
+
+  .links {
+    height: 0;
+    opacity: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+.navHolder .logo {
+  width: 100px;
+  height: 50px;
+  position: absolute;
+}
+.navHolder .logo img {
+  height: 100%;
+}
+.navHolder .bars {
+  display: none;
+}
+.navHolder .bars .bar {
+  display: block;
+  width: 25px;
+  margin: 5px 0;
+  background-color: black;
+  height: 3px;
+  border-radius: 5px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.navHolder .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: lavender;
+  height: 50px;
+  width: 100vw;
+  overflow: hidden;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-transition: height 0.4s, opacity 0.2s ease-in;
+  transition: height 0.4s, opacity 0.2s ease-in;
+}
+.navHolder .links a {
+  text-decoration: none;
+  color: black;
+}
+.navHolder .links.active {
+  height: 150px;
+  width: 100vw;
+  opacity: 1;
+}
+@media screen and (max-width: 960px) {
+  .navHolder .bars {
+    display: block;
+    margin-left: 888px;
+  }
+  .navHolder .links {
+    height: 0;
+    opacity: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.h2 {
+  padding-top: 50px;
+  width: 150px;
+  margin: 0 auto;
+}
+
+.home-container {
+  margin-top: 20px;
+  width: 100%;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+}
+.home-container .photoHolder {
+  margin: 0 auto;
+  width: 90%;
+  height: 300px;
+}
+.home-container .photoHolder .imageDescription {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 10px;
+}
+.home-container .photoHolder .imageDescription .photo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url(../images/flowersEight.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 300px;
+  width: 50%;
+}
+.home-container .photoHolder .imageDescription .button {
+  background-color: red;
+  border-radius: 30px;
+  cursor: pointer;
+  width: 98px;
+  height: 42px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.home-container .photoHolder .imageDescription .view {
+  display: none;
+}
+.home-container .photoHolder .imageDescription .photo:hover .view {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media screen and (max-width: 960px) {
+  .home-container .photoHolder .imageDescription .photo .view {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+.home-container .photoHolder .imageDescription .description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+  min-height: 300px;
+  background-color: tan;
+}
+.home-container .photoHolder .imageDescription .description p {
+  width: 300px;
+}
+.home-container .photoHolder .buttonHolder {
+  margin-top: 20px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media screen and (max-width: 960px) {
+  .home-container .photoHolder .edit {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
